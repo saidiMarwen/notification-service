@@ -1,0 +1,2 @@
+GET http://localhost:8081/api/notifications
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJib2JAdGVzdC5jb20iLCJpYXQiOjE3OTIwMTExMTEsImV4cCI6MTc5MjA5NzUxMX0.KqYyKdmj9S6ABQH52FGki49ZxPdYrtqTBQ-Vighf6I8

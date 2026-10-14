@@ -1,0 +1,26 @@
+spring:
+  application:
+    name: notification-service
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/notifications_db
+    username: taskflow
+    password: taskflow123
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+  kafka:
+    bootstrap-servers: localhost:9092
+    consumer:
+      group-id: notification-service
+      auto-offset-reset: earliest
+
+server:
+  port: 8081
+
+app:
+  jwt:
+    secret: ${JWT_SECRET:7Bm9UkZBeTUHuzUFQZmZ+omdUTn1MqvHgeVqFU2VK10=}
